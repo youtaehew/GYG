@@ -5,8 +5,8 @@
 #include <fcntl.h>
 #include <io.h>
 #pragma comment(lib , "winmm.lib")
-#include "GameLogic.h"
-#include "console.h"
+#include "GameLogicg.h"
+#include "consoleg.h"
 
 using namespace std;
 

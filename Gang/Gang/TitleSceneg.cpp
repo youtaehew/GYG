@@ -2,8 +2,8 @@
 #include<fcntl.h>
 #include<io.h>
 #include<Windows.h>
-#include "TitleScene.h"
-#include "console.h"
+#include "TitleSceneg.h"
+#include "consoleg.h"
 
 void TitleRender()
 {

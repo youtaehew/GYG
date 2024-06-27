@@ -1,6 +1,6 @@
 #include<Windows.h>
 #include<algorithm>
-#include "GameLogic.h"
+#include "GameLogicg.h"
 #include <ctime>
 
 void Init()
