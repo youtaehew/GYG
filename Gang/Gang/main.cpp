@@ -1,24 +1,20 @@
 #include<Windows.h>
-#include<vector>
-#include "TitleScene.h"
 #include "GameMenu.h"
-#include "console.h"
+#include "TitleScene.h"
+#include "Console.h"
 #include<fstream>
-#include<string>
-using std::vector;
+#include <string>
 
-int main()
-{
-	system("title TaengTaengBall | mode con cols=40 lines=25");
+int main() {
+	system("title TaengTaengBall | mode con cols=41 lines=25");
 	CursorVis(false, 1);
-	if (!Title())
+	if (!Title()) {
 		return 0;
-	else
-	{
+	}
+	else {
 		Init();
 		while (true) {
 			Update();
-		    Render();
 		}
 	}
 }

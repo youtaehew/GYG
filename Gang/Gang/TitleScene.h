@@ -13,5 +13,5 @@ enum class KEY
 };
 
 KEY KeyController();
-void EnterAnimation();
+//void EnterAnimation();
 //void ColorWrite(bool Color = false, int number = 0);

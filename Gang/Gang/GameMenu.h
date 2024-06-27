@@ -37,4 +37,3 @@ void MoveUpdate();
 void FrameSync(unsigned int _Framerate);
 void MenuMovePos(int data, bool isPlus = true);
 void DrawBox();
-void SelectMap();
