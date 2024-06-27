@@ -16,10 +16,13 @@ typedef struct _tagpos
 
 typedef struct _tagplayer
 {
-	POS tPos; // 위치
-	bool beforeIsBlock; // 벽밀기
-	int jumpHeight;
-	int currentJump;
+	POS tPos;         
+	POS tNewPos;      
+	int bombcnt;      
+	int bombpower;    
+	bool isWallPush;  
+	bool isPushOnOff;
+	bool isTrans;     
 }PLAYER, * PPLAYER;
 enum class OBJ_TYPE
 {
@@ -27,8 +30,8 @@ enum class OBJ_TYPE
 };
 const int MAP_WIDTH = 21;
 const int MAP_HEIGHT = 20;
-void Init();
-void Update();
-void MoveUpdate();
-void Render();
-void FrameSync(unsigned int _Framerate);
+//void Init();
+//void Update();
+//void MoveUpdate();
+//void Render();
+//void FrameSync(unsigned int _Framerate);
