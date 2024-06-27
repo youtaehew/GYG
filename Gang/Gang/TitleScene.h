@@ -3,13 +3,15 @@ void TitleRender();
 bool Title();
 enum class MENU
 {
-	START, INFO, QUIT
+	FIRST, START,QUIT, END
 };
 MENU MenuRender();
 void InfoRender();
 enum class KEY
 {
-	UP, DOWN, SPACE, FAIL
+	NONE, UP, DOWN, SPACE
 };
+
 KEY KeyController();
 void EnterAnimation();
+//void ColorWrite(bool Color = false, int number = 0);
