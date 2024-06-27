@@ -1,25 +1,24 @@
-#include "GameLogic.h"
+#include<Windows.h>
+#include<vector>
 #include "TitleScene.h"
-#include "Console.h"
-using namespace std;
+#include "GameMenu.h"
+#include "console.h"
+#include<fstream>
+#include<string>
+using std::vector;
 
 int main()
 {
-	Init();
+	system("title TaengTaengBall | mode con cols=40 lines=25");
+	CursorVis(false, 1);
 	if (!Title())
 		return 0;
 	else
 	{
-
-		// 게임 시작.
-		while (true)
-		{
-			system("cls");
+		Init();
+		while (true) {
 			Update();
-			Gotoxy(0, 0);
-			Render();
-
-			FrameSync(60);
+		    Render();
 		}
 	}
 }
