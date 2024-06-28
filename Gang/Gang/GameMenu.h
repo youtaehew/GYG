@@ -1,21 +1,23 @@
-#pragma once
+#ifndef GAMEMENU_H
+#define GAMEMENU_H
 
 const int MIN_Width = 4;
 const int MAX_Width = 30;
 const int MIN_Height = 3;
 const int MAX_Height = 19;
 
-typedef struct _tagpos
+typedef struct _menuPos
 {
 	int x;
 	int y;
-	bool operator == (const _tagpos& _pos) {
+	bool operator == (const _menuPos& _pos) {
 		if (x == _pos.x && y == _pos.y)
 			return true;
 		else
 			return false;
 	}
-} POS, * PPOS;
+} MENUPOS, * MENUPPOS;
+extern bool IsStart;
 
 enum class Stage
 {
@@ -30,10 +32,13 @@ enum class Stage
 	ninth,
 };
 
-void Init();
-void Render();
-void Update();
-void MoveUpdate();
-void FrameSync(unsigned int _Framerate);
+void MenuInit();
+void MenuMapRender();
+void MenuUpddate();
+void MenuMoveUpdate();
+void MenuFrameSync(unsigned int _Framerate);
 void MenuMovePos(int data, bool isPlus = true);
 void DrawBox();
+void MenuManager(bool isStart);
+
+#endif // GAMEMENU_H
