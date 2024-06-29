@@ -20,7 +20,7 @@ char copyMap[MAP_HEIGHT][MAP_WIDTH];
 PLAYER tPlayer;
 
 void GuideText() {
-	Gotoxy(0, MAP_HEIGHT+3);
+	Gotoxy(0, MAP_HEIGHT+1);
 	cout << "이동 : ←, →\n";
 	cout << "다시하기 : R\n";
 	cout << "메뉴 : E";
@@ -64,8 +64,8 @@ void Render(char _arrMap[MAP_HEIGHT][MAP_WIDTH], PPLAYER _pPlayer) {
 		}
 		cout << endl;
 	}
-	/*SetColor((int)COLOR::WHITE);
-	GuideText();*/
+	SetColor((int)COLOR::WHITE);
+	GuideText();
 
 }
 

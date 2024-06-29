@@ -79,6 +79,7 @@ bool Title()
 	//}
 }
 
+
 MENU MenuRender()
 {
 	COORD resolution = GetConsoleResolution();
@@ -128,15 +129,7 @@ MENU MenuRender()
 	}
 }
 
-void InfoRender()
-{
-	cout << "조작";
-	while (true)
-	{
-		if (KeyController() == KEY::SPACE)
-			break;
-	}
-}
+
 
 KEY KeyController()
 {
@@ -158,66 +151,3 @@ KEY KeyController()
 	return KEY::NONE;
 }
 
-//void EnterAnimation()
-//{
-//	system("cls");
-//	COORD Resolution = GetConsoleResolution();
-//	int width = Resolution.X;
-//	int height = Resolution.Y;
-//	int animtime = 20;
-//	for (int i = 0; i < 5; i++)
-//	{
-//		Gotoxy(0, 0);
-//		SetColor((int)COLOR::BLACK, (int)COLOR::WHITE);
-//		system("cls");
-//		Sleep(animtime);
-//
-//		Gotoxy(0, 0);
-//		SetColor((int)COLOR::WHITE);
-//		system("cls");
-//		Sleep(animtime);
-//	}
-//
-//	//크로스
-//	SetColor((int)COLOR::BLACK, (int)COLOR::WHITE);
-//	for (int i = 0; i < width / 2; ++i)
-//	{
-//		for (int j = 0; j < height; j += 2)
-//		{
-//			Gotoxy(i * 2, j);
-//			cout << "  ";
-//		}
-//
-//		for (int j = 1; j < height; j += 2)
-//		{
-//			Gotoxy(width - 2 - i * 2, j);
-//			cout << "  ";
-//		}
-//		Sleep(animtime);
-//	}
-//	SetColor((int)COLOR::WHITE);
-//	system("cls");
-//}
-//
-//void ColorWrite(bool Color = false, int number = 0)
-//{
-//	if (!Color) {
-//		for (int i = 0; i < 2; i++)
-//		{
-//			GotoxyDouble(x, y + i);
-//			cout << TitleText[i];
-//		}
-//	}
-//	else {
-//		for (int i = 0; i < 2; i++) {
-//			if (i == number) {
-//				SetColor((int)COLOR::RED);
-//			}
-//			GotoxyDouble(x, y + i);
-//			cout << TitleText[i];
-//			if (i == number) {
-//				SetColor((int)COLOR::WHITE);
-//			}
-//		}
-//	}
-//}

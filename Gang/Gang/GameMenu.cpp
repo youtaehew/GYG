@@ -11,13 +11,13 @@
 #include <fcntl.h>
 #include <string>
 
-MENUPOS arr[] = {
+MENUPOS arr[9] = {
     {4, 3}, {17, 3}, {30, 3},
     {4, 11}, {17, 11}, {30, 11},
     {4, 19}, {17, 19}, {30, 19}
 };
 
-std::wstring number[] = { L"①", L"②", L"③", L"④", L"⑤", L"⑥", L"⑦", L"⑧", L"⑨" };
+std::wstring number[9] = { L"①", L"②", L"③", L"④", L"⑤", L"⑥", L"⑦", L"⑧", L"⑨" };
 
 MENUPOS CurrentPos = { 3, 3 };
 Stage CurrentState;

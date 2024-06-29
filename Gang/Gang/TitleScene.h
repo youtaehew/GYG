@@ -10,7 +10,6 @@ enum class MENU
 };
 
 MENU MenuRender();
-void InfoRender();
 
 enum class KEY
 {
