@@ -1,17 +1,22 @@
-#pragma once
+#ifndef TITLESCENE_H
+#define TITLESCENE_H
+
 void TitleRender();
 bool Title();
+
 enum class MENU
 {
-	FIRST, START,QUIT, END
+    FIRST, START, QUIT, END
 };
+
 MENU MenuRender();
 void InfoRender();
+
 enum class KEY
 {
-	NONE, UP, DOWN, SPACE
+    NONE, UP, DOWN, SPACE
 };
 
 KEY KeyController();
-//void EnterAnimation();
-//void ColorWrite(bool Color = false, int number = 0);
+
+#endif // TITLESCENE_H
