@@ -8,6 +8,7 @@
 #include "GameLogic.h"
 #include "console.h"
 #include "GameMenu.h"
+#include "Sound.h"
 
 using namespace std;
 
@@ -390,30 +391,6 @@ void GameInit()
 		strcpy_s(arrMap[8][19], "33333333333333333333");
 	}
 
-	//9
-	{
-		startPos[9] = { 0, 0 };
-		strcpy_s(arrMap[9][0],  "00000000000000000000");
-		strcpy_s(arrMap[9][1],  "00000000000000000000");
-		strcpy_s(arrMap[9][2],  "00000000000000000000");
-		strcpy_s(arrMap[9][3],  "00000000000000000000");
-		strcpy_s(arrMap[9][4],  "00000000000000000000");
-		strcpy_s(arrMap[9][5],  "00000000000000000000");
-		strcpy_s(arrMap[9][6],  "40000000040000000000");
-		strcpy_s(arrMap[9][7],  "33333333333333333303");
-		strcpy_s(arrMap[9][8],  "20000000000000000000");
-		strcpy_s(arrMap[9][9],  "55555555555555555555");
-		strcpy_s(arrMap[9][10], "20000000000000000000");
-		strcpy_s(arrMap[9][11], "02000000000000000000");
-		strcpy_s(arrMap[9][12], "00200000000000000000");
-		strcpy_s(arrMap[9][13], "00020000000000000000");
-		strcpy_s(arrMap[9][14], "00002000000000000000");
-		strcpy_s(arrMap[9][15], "00000200000000000000");
-		strcpy_s(arrMap[9][16], "00000020000000000002");
-		strcpy_s(arrMap[9][17], "00000002000000000002");
-		strcpy_s(arrMap[9][18], "10010010210010010010");
-		strcpy_s(arrMap[9][19], "33333333333333333333");
-	}//9
 
 	MapSetting(0);
 	tPlayer.beforeIsBlock = false;
